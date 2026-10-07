@@ -6,11 +6,11 @@ Portfólio de Heitor Queiroz: site estático e bilíngue (PT-BR e EN), sem frame
 
 ## O que tem
 
-- Início, lista de projetos, uma página por projeto (com arquitetura) e página Sobre, em português e em inglês.
+- Início, experiência, lista de projetos, uma página por projeto (com arquitetura) e página Sobre (experiência completa, formação, certificações e idiomas), em português e em inglês.
 - Troca de idioma e de tema (claro e escuro). O tema segue o sistema e a escolha fica salva no navegador.
 - Fontes do sistema e nenhuma requisição a serviço externo. O único JavaScript é o do botão de tema.
 - Skip link, foco visível, rótulos ARIA na navegação e `hreflang` entre os idiomas.
-- Cerca de 4,5 kB por página, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
+- Entre 3,6 e 6,5 kB por página, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
 
 ## Estrutura
 
@@ -36,7 +36,8 @@ O build falha se algum link interno apontar para uma página que não existe.
 ## Como editar
 
 - **Texto, projetos e stack:** `src/content.mjs`.
-- **Experiência e formação:** preencha `experience` e `education` no mesmo arquivo. As seções só aparecem na página Sobre quando há itens.
+- **Experiência, formação e certificações:** `experience`, `education`, `certifications` e `languages` no mesmo arquivo.
+- **Nome dos clientes:** `site.showClients` mostra ou oculta o nome dos clientes atendidos pela Opah IT. Com `false`, aparece só o setor.
 - **Visual:** `src/assets/site.css`. As cores são tokens na raiz do arquivo, com versão clara e escura.
 
 Depois de editar, rode `npm run build` e faça commit de `docs/` junto com `src/`.
@@ -49,4 +50,4 @@ GitHub Pages, a partir da branch `main`, pasta `/docs`. Não há etapa de CI: o 
 
 - **Sem framework e sem dependências.** São poucas páginas, e um script de cerca de 360 linhas gera todas.
 - **Sem fontes externas.** Evita requisição a terceiros e deixa a primeira renderização mais rápida.
-- **Conteúdo só do que dá para verificar.** Os projetos descritos são repositórios públicos, e cada afirmação vem do README ou do código deles.
+- **Conteúdo só de fontes do próprio autor.** Experiência e certificações vêm do LinkedIn e do CV, e os projetos vêm dos repositórios públicos.

@@ -2,7 +2,7 @@
 import { mkdirSync, rmSync, writeFileSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { gzipSync } from 'node:zlib';
-import { site, ui, stack, projects, experience, education } from './src/content.mjs';
+import { site, ui, stack, projects, experience, education, certifications, languages } from './src/content.mjs';
 
 const OUT = 'docs';
 const LANGS = ['pt', 'en'];
@@ -77,6 +77,76 @@ function stackBlock(lang) {
   <dl class="stack">
     ${rows}
   </dl>
+</section>`;
+}
+
+// Trabalhos feitos para um cliente da Opah IT só mostram o nome do cliente se site.showClients for true.
+const fill = (text, e, lang) =>
+  text.replace('{client}', e.client ? (site.showClients ? e.client.name : pick(e.client.generic, lang)) : '');
+const orgLabel = (e) => (e.client && site.showClients ? `${e.org} (${e.client.name})` : e.org);
+
+function experienceCompact(lang) {
+  const t = ui[lang];
+  return `<section id="experience">
+  <h2>${esc(t.experienceTitle)}</h2>
+  <ul class="timeline compact">
+${experience
+  .map((e) => `    <li><span><strong>${esc(pick(e.role, lang))}</strong>, ${esc(orgLabel(e))}</span><span class="when">${esc(pick(e.period, lang))}</span></li>`)
+  .join('\n')}
+  </ul>
+  <p><a href="/${lang}/about/">${esc(t.fullExperience)} &rarr;</a></p>
+</section>`;
+}
+
+function experienceFull(lang) {
+  const t = ui[lang];
+  const item = (e) => {
+    const place = pick(e.place, lang);
+    const summary = fill(pick(e.summary, lang), e, lang);
+    const bullets = e.bullets[lang].map((b) => `<li>${esc(fill(b, e, lang))}</li>`).join('');
+    return `    <li>
+      <div><strong>${esc(pick(e.role, lang))}</strong>, ${esc(orgLabel(e))}</div>
+      <div class="when">${esc(pick(e.period, lang))}${place ? ` · ${esc(place)}` : ''}</div>${summary ? `\n      <p>${esc(summary)}</p>` : ''}${bullets ? `\n      <ul class="features">${bullets}</ul>` : ''}
+    </li>`;
+  };
+  return `<section id="experience">
+  <h2>${esc(t.experienceTitle)}</h2>
+  <ol class="timeline">
+${experience.map(item).join('\n')}
+  </ol>
+</section>`;
+}
+
+function educationBlock(lang) {
+  if (!education.length) return '';
+  const t = ui[lang];
+  return `<section id="education">
+  <h2>${esc(t.educationTitle)}</h2>
+  <ul class="timeline">
+${education
+  .map((e) => `    <li><div><strong>${esc(pick(e.title, lang))}</strong>${e.org ? `, ${esc(e.org)}` : ''}</div><div class="when">${esc(pick(e.period, lang))}</div></li>`)
+  .join('\n')}
+  </ul>
+</section>`;
+}
+
+function certsBlock(lang) {
+  const t = ui[lang];
+  return `<section id="certifications">
+  <h2>${esc(t.certsTitle)}</h2>
+  <ul class="timeline">
+${certifications
+  .map((c) => `    <li><div><strong>${esc(c.title)}</strong>, ${esc(c.org)}</div>${c.date ? `<div class="when">${esc(pick(c.date, lang))}</div>` : ''}</li>`)
+  .join('\n')}
+  </ul>
+</section>`;
+}
+
+function languagesBlock(lang) {
+  const t = ui[lang];
+  return `<section id="languages">
+  <h2>${esc(t.languagesTitle)}</h2>
+  <ul class="links">${languages.map((l) => `<li>${esc(pick(l, lang))}</li>`).join('')}</ul>
 </section>`;
 }
 
@@ -165,11 +235,13 @@ for (const lang of LANGS) {
   <p class="kicker">${esc(t.kicker)}</p>
   <h1>${esc(site.name)}</h1>
   <p class="lead">${esc(t.role)}</p>
+  <p class="meta">${esc(pick(site.location, lang))}</p>
 </section>
 <section id="about">
   <h2>${esc(t.whoTitle)}</h2>
   ${t.who.map((p) => `<p>${esc(p)}</p>`).join('\n  ')}
 </section>
+${experienceCompact(lang)}
 ${stackBlock(lang)}
 <section id="work">
   <h2>${esc(t.workTitle)}</h2>
@@ -236,8 +308,6 @@ ${
     );
   }
 
-  const timeline = (title, items, render) =>
-    items.length ? `<section><h2>${esc(title)}</h2><ul class="timeline">${items.map(render).join('')}</ul></section>` : '';
   put(
     `/${lang}/about/index.html`,
     layout({
@@ -249,8 +319,10 @@ ${
   <h1>${esc(t.aboutTitle)}</h1>
   ${t.who.map((p) => `<p>${esc(p)}</p>`).join('\n  ')}
 </section>
-${timeline(t.experienceTitle, experience, (e) => `<li><strong>${esc(e.role)}</strong>, ${esc(e.org)}<div class="when">${esc(e.period)}</div>${e.summary ? `<p>${esc(pick(e.summary, lang))}</p>` : ''}</li>`)}
-${timeline(t.educationTitle, education, (e) => `<li><strong>${esc(e.title)}</strong>, ${esc(e.org)}<div class="when">${esc(e.period)}</div></li>`)}
+${experienceFull(lang)}
+${educationBlock(lang)}
+${certsBlock(lang)}
+${languagesBlock(lang)}
 ${stackBlock(lang)}
 ${contactBlock(lang)}`
     })

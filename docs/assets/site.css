@@ -109,6 +109,14 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 
+/* experiência e formação */
+.meta { font: 400 0.85rem/1 var(--mono); color: var(--muted); }
+.timeline.compact { gap: 0; }
+.timeline.compact li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; padding-block: 10px; }
+.timeline.compact li:first-child { border-top: 0; padding-top: 0; }
+.timeline > li > .features { margin-top: 10px; }
+.timeline > li > p { margin-top: 8px; }
+
 /* diagrama da arquitetura */
 .dg-box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
 .dg-api { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }

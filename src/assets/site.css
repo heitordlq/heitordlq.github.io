@@ -108,3 +108,11 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   dl.stack dd:last-child { border-bottom: 1px solid var(--line); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* experiência e formação */
+.meta { font: 400 0.85rem/1 var(--mono); color: var(--muted); }
+.timeline.compact { gap: 0; }
+.timeline.compact li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; padding-block: 10px; }
+.timeline.compact li:first-child { border-top: 0; padding-top: 0; }
+.timeline > li > .features { margin-top: 10px; }
+.timeline > li > p { margin-top: 8px; }
