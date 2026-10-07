@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbearia SaaS | Heitor Queiroz</title>
+<meta name="description" content="Plataforma multi-tenant para barbearias, com agendamento, fidelidade e pagamentos.">
+<link rel="canonical" href="https://heitordlq.github.io/pt/projects/barbearia-saas/">
+<link rel="alternate" hreflang="pt" href="https://heitordlq.github.io/pt/projects/barbearia-saas/">
+<link rel="alternate" hreflang="en" href="https://heitordlq.github.io/en/projects/barbearia-saas/">
+<link rel="alternate" hreflang="x-default" href="https://heitordlq.github.io/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Barbearia SaaS | Heitor Queiroz">
+<meta property="og:description" content="Plataforma multi-tenant para barbearias, com agendamento, fidelidade e pagamentos.">
+<meta property="og:url" content="https://heitordlq.github.io/pt/projects/barbearia-saas/">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="top">
+  <nav class="nav wrap" aria-label="Principal">
+    <a class="brand" href="/pt/"><span class="brand-mark">HQ</span><span>Heitor Queiroz</span></a>
+    <div class="nav-links"><a class="nav-link" href="/pt/">Início</a><a class="nav-link" href="/pt/projects/" aria-current="page">Projetos</a><a class="nav-link" href="/pt/about/">Sobre</a></div>
+    <div class="nav-actions">
+      <a class="lang-switch" href="/en/projects/barbearia-saas/" hreflang="en" lang="en" title="Switch to English">en</a>
+      <button class="icon-button" type="button" data-theme-toggle aria-label="Alternar tema" title="Alternar tema">&#9680;</button>
+    </div>
+  </nav>
+</header>
+<main id="conteudo" class="wrap">
+<p class="crumb"><a href="/pt/projects/">&larr; Todos os projetos</a></p>
+<section class="case-head">
+  <h1>Barbearia SaaS</h1>
+  <p class="lead">Cada barbearia é um tenant. O cadastro público cria o dono e o tenant, e a plataforma entrega painel de gestão, site público de reservas e backoffice do SaaS.</p>
+</section>
+<section>
+  <h2>O que faz</h2>
+  <ul class="features"><li>Agenda que respeita os horários da unidade e, quando configurado, os horários de cada barbeiro, com bloqueios e pausas.</li><li>O dono cadastra barbeiros, define horários de trabalho e permissões de acesso ao painel.</li><li>Planos de fidelidade e assinaturas, conforme as regras do backend.</li><li>Pagamentos com Stripe (checkout e webhooks) e repasse via Stripe Connect.</li><li>Backoffice do SaaS com barbearias, planos da plataforma e financeiro agregado.</li></ul>
+</section>
+<section>
+  <h2>Arquitetura</h2>
+  <p>Monorepo com pnpm workspaces e Turborepo. A API usa o prefixo global /api.</p>
+  <figure class="figure" style="margin:0"><svg viewBox="0 0 680 300" role="img" aria-label="Arquitetura" xmlns="http://www.w3.org/2000/svg">
+<line class="dg-l" x1="120" y1="64" x2="120" y2="124"/><line class="dg-l" x1="340" y1="64" x2="340" y2="124"/><line class="dg-l" x1="560" y1="64" x2="560" y2="124"/><line class="dg-l" x1="90" y1="176" x2="90" y2="232"/><line class="dg-l" x1="236" y1="176" x2="236" y2="232"/><line class="dg-l" x1="372" y1="176" x2="372" y2="232"/><line class="dg-l" x1="554" y1="176" x2="554" y2="232"/>
+<rect class="dg-box" x="20" y="16" width="200" height="48" rx="6"/><text class="dg-t" x="120" y="38" text-anchor="middle">backoffice</text><text class="dg-s" x="120" y="52" text-anchor="middle">Next.js</text><rect class="dg-box" x="240" y="16" width="200" height="48" rx="6"/><text class="dg-t" x="340" y="38" text-anchor="middle">barbershop</text><text class="dg-s" x="340" y="52" text-anchor="middle">Next.js</text><rect class="dg-box" x="460" y="16" width="200" height="48" rx="6"/><text class="dg-t" x="560" y="38" text-anchor="middle">client</text><text class="dg-s" x="560" y="52" text-anchor="middle">Next.js</text>
+<rect class="dg-api" x="20" y="124" width="640" height="52" rx="6"/><text class="dg-t" x="340" y="146" text-anchor="middle">backend</text><text class="dg-s" x="340" y="164" text-anchor="middle">NestJS · /api</text>
+<rect class="dg-box" x="20" y="232" width="140" height="52" rx="6"/><text class="dg-t" x="90" y="254" text-anchor="middle">PostgreSQL</text><text class="dg-s" x="90" y="272" text-anchor="middle">Prisma</text><rect class="dg-box" x="176" y="232" width="120" height="52" rx="6"/><text class="dg-t" x="236" y="254" text-anchor="middle">Redis</text><text class="dg-s" x="236" y="272" text-anchor="middle">filas</text><rect class="dg-box" x="312" y="232" width="120" height="52" rx="6"/><text class="dg-t" x="372" y="254" text-anchor="middle">MinIO</text><text class="dg-s" x="372" y="272" text-anchor="middle">objetos</text><rect class="dg-box" x="448" y="232" width="212" height="52" rx="6"/><text class="dg-t" x="554" y="254" text-anchor="middle">Stripe</text><text class="dg-s" x="554" y="272" text-anchor="middle">checkout · webhooks · Connect</text>
+</svg><figcaption>Visão geral simplificada, montada a partir da estrutura do repositório.</figcaption></figure>
+  <div class="tree" tabindex="0" role="group" aria-label="Arquitetura"><pre><span class="d">barber-shop-app/</span>
+├─ <span class="d">backend/</span>        <span class="c">API NestJS · Prisma · PostgreSQL · Redis · MinIO</span>
+├─ <span class="d">apps/</span>
+│  ├─ <span class="d">backoffice/</span>  <span class="c">Next.js · operação do SaaS</span>
+│  ├─ <span class="d">barbershop/</span>  <span class="c">Next.js · painel da barbearia</span>
+│  └─ <span class="d">client/</span>      <span class="c">Next.js · reservas públicas</span>
+└─ <span class="d">packages/</span>       <span class="c">código compartilhado</span></pre></div>
+</section>
+<section>
+  <h2>Stack</h2>
+  <p class="tech">NestJS / Prisma / PostgreSQL / Redis / MinIO / Next.js / Turborepo / pnpm / Stripe</p>
+</section>
+<section>
+  <h2>Repositório</h2>
+  <p><a href="https://github.com/heitordlq/barber-shop-app">github.com/heitordlq/barber-shop-app</a></p>
+</section>
+</main>
+<footer>
+  <div class="wrap"><span>Site estático, sem framework. Código-fonte no GitHub.</span><a href="https://github.com/heitordlq/heitordlq.github.io">GitHub</a></div>
+</footer>
+</body>
+</html>

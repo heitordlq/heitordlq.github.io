@@ -1,0 +1,11 @@
+{
+  "name": "heitordlq.github.io",
+  "private": true,
+  "type": "module",
+  "description": "Portfólio de Heitor Queiroz: site estático e bilíngue gerado por um script sem dependências.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && python3 -m http.server 4173 -d docs"
+  }
+}
