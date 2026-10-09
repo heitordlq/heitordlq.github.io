@@ -95,6 +95,8 @@ button{font:inherit;color:inherit}
 .clk{color:var(--dim)}
 .menu-btn{background:rgba(234,242,250,.1);border:0;padding:.45rem .9rem;cursor:pointer;font:400 .72rem var(--mono);letter-spacing:.08em;transition:background-color .2s}
 .menu-btn:hover{background:rgba(234,242,250,.2)}
+.pdf-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .8rem;border:1px solid var(--fg);color:var(--fg);text-decoration:none;font:500 .72rem var(--mono);letter-spacing:.08em;transition:background-color .2s,color .2s}
+.pdf-btn:hover,.pdf-btn:focus-visible{background:var(--fg);color:#05070D}
 
 /* botão com cantos */
 .bk{position:relative;display:inline-block;margin:8px;padding:.95rem 1.9rem;border:0;cursor:pointer;background:var(--fg);color:#05070D;text-decoration:none;
@@ -202,7 +204,8 @@ button{font:inherit;color:inherit}
   .bar{grid-template-columns:1fr auto}
   .bar{padding-bottom:26px;background:linear-gradient(to bottom,rgba(3,5,10,.96) 0%,rgba(3,5,10,.9) 62%,rgba(3,5,10,0) 100%)}
   .yr{background:rgba(3,5,10,.86);padding:6px 10px;border-radius:4px}
-  .mid,.dots{display:none}
+  .mid,.dots,.clk{display:none}
+  .rt{gap:10px}
   .cols{grid-template-columns:1fr}
   .menu-ov ol{columns:1}
   .ghost{top:38%}
@@ -230,7 +233,7 @@ button{font:inherit;color:inherit}
 <header class="bar">
   <a class="brand" href="#hero" aria-label="Início"><span class="mark">hq</span><span>Heitor Queiroz</span></a>
   <span class="mid" id="mid" aria-live="off">Tech Lead / Currículo interativo</span>
-  <div class="rt"><span class="clk" id="clock" aria-hidden="true"></span><button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">menu</button></div>
+  <div class="rt"><span class="clk" id="clock" aria-hidden="true"></span><a class="pdf-btn" href="/curriculo/Heitor-Queiroz-Curriculo.pdf" download aria-label="Baixar currículo em PDF">PDF<svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 1v7M3 5.5 6 8.5l3-3M1.5 11h9"/></svg></a><button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">menu</button></div>
 </header>
 
 <nav class="menu-ov" id="menu" aria-label="Seções" inert>
@@ -328,6 +331,7 @@ button{font:inherit;color:inherit}
     <h2 data-scr>Vamos conversar</h2>
     <div class="ct-links">
       <a class="bk" href="mailto:hqueiroz.q@gmail.com">Enviar e-mail</a>
+      <a class="bk" href="/curriculo/Heitor-Queiroz-Curriculo.pdf" download>Baixar currículo (PDF)</a>
       <a class="lnk" href="https://linkedin.com/in/heitorqueiroz" target="_blank" rel="noopener">linkedin.com/in/heitorqueiroz</a>
     </div>
     <p class="hud">Heitor Queiroz / São Paulo, SP, Brasil</p>
