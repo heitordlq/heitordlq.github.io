@@ -48,7 +48,7 @@ function layout({ lang, path, title, description, body, ogType = 'website' }) {
 <header class="top">
   <nav class="nav wrap" aria-label="${esc(t.navLabel)}">
     <a class="brand" href="/${lang}/"><span class="brand-mark">${site.initials}</span><span>${esc(site.name)}</span></a>
-    <div class="nav-links">${navLink('home', `/${lang}/`)}${navLink('projects', `/${lang}/projects/`)}${navLink('about', `/${lang}/about/`)}</div>
+    <div class="nav-links">${navLink('home', `/${lang}/`)}${navLink('projects', `/${lang}/projects/`)}${navLink('cv', '/curriculo/')}</div>
     <div class="nav-actions">
       <a class="lang-switch" href="/${other}/${path}" hreflang="${other}" lang="${other}" title="${esc(t.other.title)}">${other}</a>
       <button class="icon-button" type="button" data-theme-toggle aria-label="${esc(t.theme)}" title="${esc(t.theme)}">&#9680;</button>
