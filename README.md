@@ -10,7 +10,7 @@ Portfólio de Heitor Queiroz: site estático e bilíngue (PT-BR e EN), sem frame
 - Troca de idioma e de tema (claro e escuro). O tema segue o sistema e a escolha fica salva no navegador.
 - Fontes do sistema e nenhuma requisição a serviço externo. O único JavaScript é o do botão de tema.
 - Skip link, foco visível, rótulos ARIA na navegação e `hreflang` entre os idiomas.
-- Entre 3,6 e 6,5 kB por página, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
+- Entre 3,6 e 6,8 kB por página, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
 
 ## Estrutura
 

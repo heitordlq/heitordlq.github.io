@@ -16,18 +16,48 @@ export const site = {
 
 // Substituído por {client} nos textos das experiências em que o trabalho foi feito para um cliente da Opah IT.
 const crefisa = { name: 'Crefisa', generic: { pt: 'uma instituição financeira', en: 'a financial institution' } };
+const protege = { name: 'Protege Cash', generic: { pt: 'uma plataforma bancária', en: 'a banking platform' } };
 const h2bet = { name: 'H2 Bet', generic: { pt: 'uma empresa de iGaming', en: 'an iGaming company' } };
 
 export const experience = [
   {
     role: 'Tech Lead',
     org: 'Opah IT',
+    client: protege,
+    period: { pt: 'set. 2026 – atual', en: 'Sep 2026 – present' },
+    place: { pt: 'São Paulo', en: 'São Paulo' },
+    summary: {
+      pt: 'Transformação e evolução da plataforma bancária: arquitetura, produtos, canais digitais e engenharia, com foco em escala, eficiência operacional e qualidade.',
+      en: 'Transformation and evolution of the banking platform: architecture, products, digital channels and engineering, focused on scale, operational efficiency and quality.'
+    },
+    bullets: {
+      pt: [
+        'Pix: lidero a implementação e a evolução, com integração a Internet Banking, App PF, App PJ e Backoffice. A migração da infraestrutura foi concluída, com redução de custos, melhor performance para o cliente e menos incidentes.',
+        'Pessoas: time de 6 pessoas (desenvolvedores e QA), com 2 promoções conduzidas e reestruturação do time e dos processos.',
+        'Produtos: evolução de produtos e jornadas para clientes PF, PJ, operadores e usuários Master.',
+        'Engenharia: documentação técnica no Backstage (IDP open source da Spotify), melhoria do Git Flow e padronização do desenvolvimento com scaffolds.',
+        'Alinhamento: integração entre Engenharia, Produto, QA, Negócio e parceiros estratégicos, conectando estratégia, arquitetura e execução.',
+        'Modernização: base tecnológica mais escalável, resiliente e sustentável para suportar o crescimento da operação.'
+      ],
+      en: [
+        'Pix: I lead the implementation and evolution, integrated with Internet Banking, the personal and business apps and the Back Office. The infrastructure migration was completed, with lower costs, better performance for customers and fewer incidents.',
+        'People: a team of 6 (developers and QA), with 2 promotions led and a restructuring of the team and its processes.',
+        'Products: evolution of products and journeys for personal and business customers, operators and Master users.',
+        'Engineering: technical documentation on Backstage (Spotify’s open-source IDP), an improved Git Flow and standardized development with scaffolds.',
+        'Alignment: integration between Engineering, Product, QA, Business and strategic partners, connecting strategy, architecture and execution.',
+        'Modernization: a more scalable, resilient and sustainable technology base to support the growth of the operation.'
+      ]
+    }
+  },
+  {
+    role: 'Tech Lead',
+    org: 'Opah IT',
     client: h2bet,
-    period: { pt: 'out. 2024 – atual', en: 'Oct 2024 – present' },
+    period: { pt: 'out. 2024 – set. 2026', en: 'Oct 2024 – Sep 2026' },
     place: { pt: 'Brasil, híbrido', en: 'Brazil, hybrid' },
     summary: {
-      pt: 'Lidero o time de engenharia da plataforma de apostas e cassino de {client}: 14 pessoas, sendo 12 desenvolvedores (6 fullstack, 4 backend, 2 front-end) e 2 QAs, em ambiente de alto volume transacional e disponibilidade crítica na indústria de iGaming.',
-      en: 'I lead the engineering team of the betting and casino platform of {client}: 14 people, 12 of them developers (6 fullstack, 4 backend, 2 front-end) and 2 QAs, in a high-volume, mission-critical iGaming environment.'
+      pt: 'Liderei o time de engenharia da plataforma de apostas e cassino de {client}: 14 pessoas, sendo 12 desenvolvedores (6 fullstack, 4 backend, 2 front-end) e 2 QAs, em ambiente de alto volume transacional e disponibilidade crítica na indústria de iGaming.',
+      en: 'I led the engineering team of the betting and casino platform of {client}: 14 people, 12 of them developers (6 fullstack, 4 backend, 2 front-end) and 2 QAs, in a high-volume, mission-critical iGaming environment.'
     },
     bullets: {
       pt: [
@@ -253,7 +283,7 @@ export const ui = {
     siteDesc: 'Portfólio de Heitor Queiroz, Tech Lead: experiência, projetos pessoais, stack e contato.',
     whoTitle: 'Quem sou',
     who: [
-      'Tech Lead com mais de 10 anos de trajetória, ligando desafios técnicos complexos aos objetivos do negócio. Hoje lidero arquiteturas de microsserviços de alta volumetria em Kubernetes na AWS, sustentando plataformas de apostas (iGaming) e aplicações financeiras críticas.',
+      'Tech Lead com mais de 10 anos de trajetória, ligando desafios técnicos complexos aos objetivos do negócio. Lidero arquiteturas de microsserviços de alta volumetria em Kubernetes na AWS, em plataformas de apostas (iGaming) e em aplicações bancárias e financeiras críticas.',
       'Acredito que a melhor arquitetura nasce em times motivados, bem mentorados e com senso de propósito. Minha gestão de pessoas se apoia em rituais consistentes: 1:1s recorrentes, feedback contínuo, PDI individualizado e priorização de demanda.'
     ],
     stackTitle: 'Stack',
@@ -290,7 +320,7 @@ export const ui = {
     siteDesc: 'Portfolio of Heitor Queiroz, Tech Lead: experience, personal projects, stack and contact.',
     whoTitle: 'About me',
     who: [
-      'Tech Lead with more than 10 years of experience, connecting complex technical challenges to business goals. Today I lead high-volume microservices architectures on Kubernetes on AWS, supporting betting (iGaming) platforms and critical financial applications.',
+      'Tech Lead with more than 10 years of experience, connecting complex technical challenges to business goals. I lead high-volume microservices architectures on Kubernetes on AWS, in betting (iGaming) platforms and in critical banking and financial applications.',
       'I believe the best architecture comes from motivated, well-mentored teams with a strong sense of purpose. My people management relies on consistent rituals: recurring 1:1s, continuous feedback, individual development plans and demand prioritization.'
     ],
     stackTitle: 'Stack',
