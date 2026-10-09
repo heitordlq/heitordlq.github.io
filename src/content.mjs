@@ -27,25 +27,25 @@ export const experience = [
     period: { pt: 'set. 2026 – atual', en: 'Sep 2026 – present' },
     place: { pt: 'São Paulo', en: 'São Paulo' },
     summary: {
-      pt: 'Transformação e evolução da plataforma bancária: arquitetura, produtos, canais digitais e engenharia, com foco em escala, eficiência operacional e qualidade.',
-      en: 'Transformation and evolution of the banking platform: architecture, products, digital channels and engineering, focused on scale, operational efficiency and quality.'
+      pt: 'Evolução da plataforma bancária: arquitetura, produtos, canais digitais e engenharia.',
+      en: 'Evolution of the banking platform: architecture, products, digital channels and engineering.'
     },
     bullets: {
       pt: [
-        'Pix: lidero a implementação e a evolução, com integração a Internet Banking, App PF, App PJ e Backoffice. A migração da infraestrutura foi concluída, com redução de custos, melhor performance para o cliente e menos incidentes.',
-        'Pessoas: time de 6 pessoas (desenvolvedores e QA), com 2 promoções conduzidas e reestruturação do time e dos processos.',
+        'Pix: lidero a implementação e a evolução, integrado ao Internet Banking, aos apps PF e PJ e ao Backoffice. Concluímos a migração da infraestrutura: custo menor, resposta mais rápida para o cliente e menos incidentes.',
+        'Pessoas: time de 6 pessoas (desenvolvedores e QA). Conduzi 2 promoções e reestruturei o time e os processos.',
         'Produtos: evolução de produtos e jornadas para clientes PF, PJ, operadores e usuários Master.',
         'Engenharia: documentação técnica no Backstage (IDP open source da Spotify), melhoria do Git Flow e padronização do desenvolvimento com scaffolds.',
-        'Alinhamento: integração entre Engenharia, Produto, QA, Negócio e parceiros estratégicos, conectando estratégia, arquitetura e execução.',
-        'Modernização: base tecnológica mais escalável, resiliente e sustentável para suportar o crescimento da operação.'
+        'Alinhamento: faço a ponte entre Engenharia, Produto, QA, Negócio e parceiros.',
+        'Modernização: a base tecnológica está sendo reformulada para aguentar o crescimento da operação.'
       ],
       en: [
-        'Pix: I lead the implementation and evolution, integrated with Internet Banking, the personal and business apps and the Back Office. The infrastructure migration was completed, with lower costs, better performance for customers and fewer incidents.',
-        'People: a team of 6 (developers and QA), with 2 promotions led and a restructuring of the team and its processes.',
+        'Pix: I lead the implementation and evolution, integrated with Internet Banking, the personal and business apps and the Back Office. We finished the infrastructure migration: lower cost, faster responses for customers and fewer incidents.',
+        'People: a team of 6 (developers and QA). I led 2 promotions and restructured the team and its processes.',
         'Products: evolution of products and journeys for personal and business customers, operators and Master users.',
         'Engineering: technical documentation on Backstage (Spotify’s open-source IDP), an improved Git Flow and standardized development with scaffolds.',
-        'Alignment: integration between Engineering, Product, QA, Business and strategic partners, connecting strategy, architecture and execution.',
-        'Modernization: a more scalable, resilient and sustainable technology base to support the growth of the operation.'
+        'Alignment: I bridge Engineering, Product, QA, Business and partners.',
+        'Modernization: the technology base is being reworked to handle the growth of the operation.'
       ]
     }
   },
@@ -56,25 +56,25 @@ export const experience = [
     period: { pt: 'out. 2024 – set. 2026', en: 'Oct 2024 – Sep 2026' },
     place: { pt: 'Brasil, híbrido', en: 'Brazil, hybrid' },
     summary: {
-      pt: 'Liderei o time de engenharia da plataforma de apostas e cassino de {client}: 14 pessoas, sendo 12 desenvolvedores (6 fullstack, 4 backend, 2 front-end) e 2 QAs, em ambiente de alto volume transacional e disponibilidade crítica na indústria de iGaming.',
-      en: 'I led the engineering team of the betting and casino platform of {client}: 14 people, 12 of them developers (6 fullstack, 4 backend, 2 front-end) and 2 QAs, in a high-volume, mission-critical iGaming environment.'
+      pt: 'Liderei o time de engenharia da plataforma de apostas e cassino de {client}: 14 pessoas, sendo 12 desenvolvedores (6 fullstack, 4 backend, 2 front-end) e 2 QAs, com alto volume de transações e pouca tolerância a indisponibilidade.',
+      en: 'I led the engineering team of the betting and casino platform of {client}: 14 people, 12 of them developers (6 fullstack, 4 backend, 2 front-end) and 2 QAs, with high transaction volume and little tolerance for downtime.'
     },
     bullets: {
       pt: [
-        'Gestão de pessoas: desenvolvimento de carreira e gestão de performance do time, com 1:1s, PDIs, feedbacks contínuos e cultura de melhoria contínua. Duas promoções conduzidas, de júnior para pleno e de desenvolvedor para tech lead.',
+        'Gestão de pessoas: carreira e performance do time, com 1:1s, PDIs e feedback frequente. Conduzi duas promoções, de júnior para pleno e de desenvolvedor para tech lead.',
         'Contratação: mais de 20 entrevistas técnicas e 8 pessoas contratadas, da definição do perfil ao processo seletivo.',
-        'Arquitetura e entrega: condução das discussões de arquitetura da plataforma distribuída, com tempo de resposta de até 400 ms por requisição, e coordenação de novas funcionalidades, gerenciando escopo, riscos e dependências.',
-        'Stack: evolução para Node.js, Java com Quarkus e microfrontend em React, com microsserviços de alta volumetria em Kubernetes na AWS, elevando performance, escalabilidade e velocidade de entrega das squads.',
-        'Processos de engenharia: melhoria do Git Flow, da documentação técnica, do IDP (Internal Developer Platform) e dos processos de deploy e de qualidade, padronizando o ciclo de desenvolvimento e ampliando a autonomia do time.',
-        'Stakeholders: principal ponto de contato técnico com a gestão de produtos e o negócio, traduzindo necessidades em requisitos técnicos e antecipando riscos.'
+        'Arquitetura e entrega: conduzi as discussões de arquitetura da plataforma distribuída (resposta de até 400 ms por requisição) e coordenei novas funcionalidades, com escopo, riscos e dependências.',
+        'Stack: Node.js, Java com Quarkus e microfrontend em React, com microsserviços de alta volumetria em Kubernetes na AWS. A mudança melhorou performance, escalabilidade e a velocidade de entrega das squads.',
+        'Processos de engenharia: melhorei o Git Flow, a documentação técnica, o IDP (Internal Developer Platform) e os processos de deploy e qualidade. O time ganhou autonomia.',
+        'Stakeholders: principal contato técnico com Produto e Negócio. Traduzo necessidades em requisitos técnicos e aviso os riscos cedo.'
       ],
       en: [
-        'People management: career development and performance management, with 1:1s, development plans, continuous feedback and a continuous-improvement culture. Two promotions led: junior to mid-level, and developer to tech lead.',
+        'People management: career and performance of the team, with 1:1s, development plans and frequent feedback. I led two promotions, junior to mid-level and developer to tech lead.',
         'Hiring: more than 20 technical interviews and 8 hires, from defining the profile to the selection process.',
-        'Architecture and delivery: led the architecture discussions of the distributed platform, sustaining response times of up to 400 ms per request, and coordinated new features, managing scope, risks and dependencies.',
-        'Stack: moved the stack to Node.js, Java with Quarkus and React microfrontends, with high-volume microservices on Kubernetes on AWS, raising performance, scalability and delivery speed of the squads.',
-        'Engineering processes: improved Git Flow, technical documentation, the IDP (Internal Developer Platform) and the deploy and quality processes, standardizing the development cycle and increasing team autonomy.',
-        'Stakeholders: main technical contact for product management and the business, translating needs into technical requirements and anticipating risks.'
+        'Architecture and delivery: I led the architecture discussions of the distributed platform (responses within 400 ms per request) and coordinated new features, including scope, risks and dependencies.',
+        'Stack: Node.js, Java with Quarkus and React microfrontends, with high-volume microservices on Kubernetes on AWS. The change improved performance, scalability and the squads’ delivery speed.',
+        'Engineering processes: I improved Git Flow, technical documentation, the IDP (Internal Developer Platform) and the deploy and quality processes. The team gained autonomy.',
+        'Stakeholders: main technical contact for Product and the business. I turn needs into technical requirements and flag risks early.'
       ]
     }
   },
@@ -84,19 +84,19 @@ export const experience = [
     period: { pt: 'mai. 2022 – set. 2024', en: 'May 2022 – Sep 2024' },
     place: { pt: 'São Paulo, presencial', en: 'São Paulo, on site' },
     summary: {
-      pt: 'Liderança técnica do programa estratégico de migração de serviços legados (Oracle OSB) para uma arquitetura moderna de microsserviços em .NET sobre OpenShift, em ambiente financeiro regulado. Time de 4 pessoas, com mais de 10 serviços migrados.',
-      en: 'Technical lead of the strategic program to migrate legacy services (Oracle OSB) to a modern microservices architecture in .NET on OpenShift, in a regulated financial environment. Team of 4, with more than 10 services migrated.'
+      pt: 'Liderei tecnicamente a migração de serviços legados (Oracle OSB) para microsserviços em .NET sobre OpenShift, em ambiente financeiro regulado. Time de 4 pessoas, mais de 10 serviços migrados.',
+      en: 'I was the technical lead of the migration of legacy services (Oracle OSB) to microservices in .NET on OpenShift, in a regulated financial environment. Team of 4, more than 10 services migrated.'
     },
     bullets: {
       pt: [
-        'Gestão por OKRs: defini e gerenciei os OKRs da equipe em cascata com as metas da empresa, melhorando a previsibilidade e a qualidade das entregas.',
-        'Governança de APIs: ciclo de vida e arquitetura de mais de 50 APIs em CA Layer 7, padronizando contratos, versionamento e segurança.',
-        'Capacitação do time: transição da equipe de SOA/OSB para microsserviços, guiando a adoção de boas práticas de desenvolvimento e engenharia moderna.'
+        'OKRs: defini e acompanhei os OKRs da equipe, alinhados às metas da empresa. As entregas ficaram mais previsíveis.',
+        'Governança de APIs: ciclo de vida e arquitetura de mais de 50 APIs em CA Layer 7, com padrão para contratos, versionamento e segurança.',
+        'Time: acompanhei a transição da equipe de SOA/OSB para microsserviços.'
       ],
       en: [
-        'OKR management: defined and managed the team OKRs cascaded from company goals, improving predictability and delivery quality.',
-        'API governance: lifecycle and architecture of more than 50 APIs on CA Layer 7, standardizing contracts, versioning and security.',
-        'Team enablement: moved the team from SOA/OSB to microservices, guiding the adoption of good development practices and modern engineering.'
+        'OKRs: I defined and tracked the team OKRs, aligned with company goals. Deliveries became more predictable.',
+        'API governance: lifecycle and architecture of more than 50 APIs on CA Layer 7, with a standard for contracts, versioning and security.',
+        'Team: I guided the team’s transition from SOA/OSB to microservices.'
       ]
     }
   },
@@ -107,21 +107,21 @@ export const experience = [
     period: { pt: 'abr. 2021 – abr. 2022', en: 'Apr 2021 – Apr 2022' },
     place: { pt: 'São Paulo, presencial', en: 'São Paulo, on site' },
     summary: {
-      pt: 'Liderança técnica de projetos de integração e arquitetura no core digital de {client}, cobrindo aplicativo do banco, Internet Banking e PIX, em ambiente sujeito a SLA regulatório e a picos de volume transacional.',
-      en: 'Technical lead of integration and architecture projects in the digital core of {client}, covering the bank app, Internet Banking and PIX, under regulatory SLAs and transaction volume peaks.'
+      pt: 'Liderei tecnicamente projetos de integração e arquitetura no core digital de {client}: aplicativo do banco, Internet Banking e PIX, com SLA regulatório e picos de transações.',
+      en: 'I was the technical lead of integration and architecture projects in the digital core of {client}: the bank app, Internet Banking and PIX, with regulatory SLAs and transaction peaks.'
     },
     bullets: {
       pt: [
-        'Aplicativo e APIs: implementação do aplicativo do banco, definindo as APIs e a arquitetura que sustentam as jornadas do cliente e melhorando a experiência de uso.',
-        'Performance: decisões de arquitetura por trás dos ganhos de performance no PIX e nas jornadas de conta corrente no Internet Banking.',
-        'Facilitação técnica: workshops de arquitetura e sessões de design com stakeholders de negócio e de tecnologia, para definir soluções robustas e escaláveis.',
-        'Governança tecnológica: avaliação e seleção de tecnologias e ferramentas, documentando as decisões e garantindo a aderência do time às boas práticas de desenvolvimento.'
+        'Aplicativo e APIs: implementei o aplicativo do banco e defini as APIs e a arquitetura por trás das jornadas do cliente.',
+        'Performance: decisões de arquitetura que melhoraram o PIX e as jornadas de conta corrente no Internet Banking.',
+        'Workshops: sessões de arquitetura e design com Negócio e Tecnologia para decidir as soluções.',
+        'Tecnologia: avaliei e escolhi tecnologias e ferramentas, e documentei as decisões.'
       ],
       en: [
-        'App and APIs: implementation of the bank app, defining the APIs and architecture behind the customer journeys and improving the user experience.',
-        'Performance: architecture decisions behind the performance gains in PIX and in the checking-account journeys of Internet Banking.',
-        'Technical facilitation: architecture workshops and design sessions with business and technology stakeholders, to define robust and scalable solutions.',
-        'Technology governance: evaluation and selection of technologies and tools, documenting decisions and keeping the team aligned with good development practices.'
+        'App and APIs: I implemented the bank app and defined the APIs and architecture behind the customer journeys.',
+        'Performance: architecture decisions that improved PIX and the checking-account journeys in Internet Banking.',
+        'Workshops: architecture and design sessions with Business and Technology to decide on solutions.',
+        'Technology: I evaluated and chose technologies and tools, and documented the decisions.'
       ]
     }
   },
@@ -132,8 +132,8 @@ export const experience = [
     period: { pt: 'nov. 2019 – abr. 2021', en: 'Nov 2019 – Apr 2021' },
     place: { pt: 'São Paulo', en: 'São Paulo' },
     summary: {
-      pt: 'Projetei e implementei soluções complexas de integração, com foco em migração de tecnologia e definição de arquiteturas escaláveis. Referência técnica no gerenciamento de APIs com CA Layer 7, Oracle OSB e SOA, e na manipulação de dados (XPath, JSON), garantindo performance e segurança dos serviços.',
-      en: 'Designed and implemented complex integration solutions, focused on technology migration and scalable architecture definition. Technical reference for API management with CA Layer 7, Oracle OSB and SOA, and for data handling (XPath, JSON), ensuring service performance and security.'
+      pt: 'Projetei e implementei integrações complexas, com foco em migração de tecnologia e arquitetura. Fui a referência técnica em APIs com CA Layer 7, Oracle OSB e SOA, e em manipulação de dados (XPath, JSON).',
+      en: 'Designed and implemented complex integrations, focused on technology migration and architecture. I was the technical reference for APIs with CA Layer 7, Oracle OSB and SOA, and for data handling (XPath, JSON).'
     },
     bullets: { pt: [], en: [] }
   },
@@ -143,17 +143,17 @@ export const experience = [
     period: { pt: 'mar. 2018 – nov. 2019', en: 'Mar 2018 – Nov 2019' },
     place: { pt: 'São Paulo e região, presencial', en: 'São Paulo area, on site' },
     summary: {
-      pt: 'Arquitetura e desenvolvimento de projetos de integração com Oracle SOA Suite e OSB em um ambiente de varejo de grande porte, além do suporte crítico à produção e da sustentação da plataforma WebLogic.',
-      en: 'Architecture and development of integration projects with Oracle SOA Suite and OSB in a large retail environment, plus critical production support and WebLogic platform maintenance.'
+      pt: 'Arquitetura e desenvolvimento de integrações com Oracle SOA Suite e OSB em uma grande rede de varejo, além de suporte à produção e manutenção da plataforma WebLogic.',
+      en: 'Architecture and development of integrations with Oracle SOA Suite and OSB at a large retailer, plus production support and WebLogic platform maintenance.'
     },
     bullets: {
       pt: [
-        'Evolução da arquitetura: início da transformação de sistemas monolíticos para microsserviços em Java com Spring Boot, executados em Docker Swarm, buscando mais escalabilidade, disponibilidade e resiliência.',
-        'Alta demanda: sustentação e preparação da plataforma para períodos de pico, incluindo a Black Friday, suportando picos de acesso e transações sem ocorrências críticas e contribuindo para recordes de vendas da operação.'
+        'Arquitetura: comecei a quebrar sistemas monolíticos em microsserviços Java com Spring Boot, rodando em Docker Swarm.',
+        'Alta demanda: preparei e sustentei a plataforma nos períodos de pico, como a Black Friday, sem ocorrências críticas, e a operação bateu recordes de vendas.'
       ],
       en: [
-        'Architecture evolution: started the move from monolithic systems to microservices in Java with Spring Boot, running on Docker Swarm, aiming for more scalability, availability and resilience.',
-        'High demand: maintained and prepared the platform for peak periods, including Black Friday, handling traffic and transaction peaks with no critical incidents and contributing to sales records.'
+        'Architecture: I started breaking monolithic systems into Java microservices with Spring Boot, running on Docker Swarm.',
+        'High demand: I prepared and kept the platform running through peak periods such as Black Friday, with no critical incidents, and the operation hit sales records.'
       ]
     }
   },
@@ -163,8 +163,8 @@ export const experience = [
     period: { pt: 'set. 2016 – mar. 2018', en: 'Sep 2016 – Mar 2018' },
     place: { pt: 'São José dos Campos, presencial', en: 'São José dos Campos, on site' },
     summary: {
-      pt: 'Desenvolvimento e suporte de integrações com Oracle SOA Suite e OSB em projetos do setor aeroespacial, atuando na definição de arquitetura e no ciclo de vida dos serviços.',
-      en: 'Development and support of integrations with Oracle SOA Suite and OSB in aerospace projects, working on architecture definition and the service lifecycle.'
+      pt: 'Desenvolvimento e suporte de integrações com Oracle SOA Suite e OSB em projetos aeroespaciais, incluindo arquitetura e ciclo de vida dos serviços.',
+      en: 'Development and support of integrations with Oracle SOA Suite and OSB in aerospace projects, including architecture and the service lifecycle.'
     },
     bullets: { pt: [], en: [] }
   },
@@ -279,19 +279,19 @@ export const ui = {
     nav: { home: 'Início', projects: 'Projetos', about: 'Sobre' },
     navLabel: 'Principal',
     theme: 'Alternar tema',
-    role: 'Tech Lead. Gestão de times de engenharia, microsserviços e integração, no setor financeiro e de iGaming.',
+    role: 'Tech Lead. Times de engenharia, microsserviços e integração, no setor financeiro e de iGaming.',
     siteDesc: 'Portfólio de Heitor Queiroz, Tech Lead: experiência, projetos pessoais, stack e contato.',
     whoTitle: 'Quem sou',
     who: [
-      'Tech Lead com mais de 10 anos de trajetória, ligando desafios técnicos complexos aos objetivos do negócio. Lidero arquiteturas de microsserviços de alta volumetria em Kubernetes na AWS, em plataformas de apostas (iGaming) e em aplicações bancárias e financeiras críticas.',
-      'Acredito que a melhor arquitetura nasce em times motivados, bem mentorados e com senso de propósito. Minha gestão de pessoas se apoia em rituais consistentes: 1:1s recorrentes, feedback contínuo, PDI individualizado e priorização de demanda.'
+      'Sou Tech Lead e trabalho com tecnologia há mais de 10 anos. Hoje lidero times que constroem microsserviços de alto volume em Kubernetes na AWS, em plataformas de apostas (iGaming) e em sistemas bancários e financeiros.',
+      'Acho que boa arquitetura sai de time motivado e bem acompanhado. Na gestão de pessoas, faço 1:1 com regularidade, dou feedback no dia a dia e mantenho um PDI para cada pessoa.'
     ],
     stackTitle: 'Stack',
     workTitle: 'Projetos pessoais',
     allProjects: 'Todos os projetos',
     viewProject: 'Ver projeto',
     projectsTitle: 'Projetos',
-    projectsIntro: 'Projetos pessoais, com o código aberto no GitHub. São trabalhos próprios, em TypeScript.',
+    projectsIntro: 'Projetos pessoais, com o código aberto no GitHub.',
     aboutTitle: 'Sobre',
     experienceTitle: 'Experiência',
     educationTitle: 'Formação',
@@ -316,19 +316,19 @@ export const ui = {
     nav: { home: 'Home', projects: 'Projects', about: 'About' },
     navLabel: 'Main',
     theme: 'Toggle theme',
-    role: 'Tech Lead. Engineering team management, microservices and integration, in finance and iGaming.',
+    role: 'Tech Lead. Engineering teams, microservices and integration, in finance and iGaming.',
     siteDesc: 'Portfolio of Heitor Queiroz, Tech Lead: experience, personal projects, stack and contact.',
     whoTitle: 'About me',
     who: [
-      'Tech Lead with more than 10 years of experience, connecting complex technical challenges to business goals. I lead high-volume microservices architectures on Kubernetes on AWS, in betting (iGaming) platforms and in critical banking and financial applications.',
-      'I believe the best architecture comes from motivated, well-mentored teams with a strong sense of purpose. My people management relies on consistent rituals: recurring 1:1s, continuous feedback, individual development plans and demand prioritization.'
+      'I am a Tech Lead and have worked in technology for more than 10 years. Today I lead teams that build high-volume microservices on Kubernetes on AWS, in betting (iGaming) platforms and in banking and financial systems.',
+      'I think good architecture comes from a motivated, well-supported team. For people management, I hold regular 1:1s, give feedback day to day and keep a development plan for each person.'
     ],
     stackTitle: 'Stack',
     workTitle: 'Personal projects',
     allProjects: 'All projects',
     viewProject: 'View project',
     projectsTitle: 'Projects',
-    projectsIntro: 'Personal projects, with the code open on GitHub. They are my own work, in TypeScript.',
+    projectsIntro: 'Personal projects, with the code open on GitHub.',
     aboutTitle: 'About',
     experienceTitle: 'Experience',
     educationTitle: 'Education',
@@ -364,7 +364,7 @@ export const projects = [
     pt: {
       title: 'Barbearia SaaS',
       summary: 'Plataforma multi-tenant para barbearias, com agendamento, fidelidade e pagamentos.',
-      intro: 'Cada barbearia é um tenant. O cadastro público cria o dono e o tenant, e a plataforma entrega painel de gestão, site público de reservas e backoffice do SaaS.',
+      intro: 'Cada barbearia é um tenant. O cadastro público cria o dono e o tenant. A plataforma tem painel de gestão, site público de reservas e backoffice do SaaS.',
       features: [
         'Agenda que respeita os horários da unidade e, quando configurado, os horários de cada barbeiro, com bloqueios e pausas.',
         'O dono cadastra barbeiros, define horários de trabalho e permissões de acesso ao painel.',
@@ -378,7 +378,7 @@ export const projects = [
     en: {
       title: 'Barbershop SaaS',
       summary: 'Multi-tenant platform for barbershops, with booking, loyalty and payments.',
-      intro: 'Each barbershop is a tenant. Public sign-up creates the owner and the tenant, and the platform delivers a management dashboard, a public booking site and a SaaS back office.',
+      intro: 'Each barbershop is a tenant. Public sign-up creates the owner and the tenant. The platform has a management dashboard, a public booking site and a SaaS back office.',
       features: [
         'A schedule that respects the shop hours and, when configured, each barber’s own hours, with blocks and breaks.',
         'The owner registers barbers, sets working hours and dashboard access permissions.',

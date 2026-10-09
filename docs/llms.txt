@@ -2,13 +2,13 @@
 
 > Portfólio de Heitor Queiroz, Tech Lead: experiência, projetos pessoais, stack e contato. Site estático e bilíngue (PT-BR e EN), sem framework.
 
-Tech Lead. Gestão de times de engenharia, microsserviços e integração, no setor financeiro e de iGaming.
+Tech Lead. Times de engenharia, microsserviços e integração, no setor financeiro e de iGaming.
 
 ## Páginas
 
 - [Início](https://heitordlq.github.io/pt/): apresentação, experiência resumida, stack e projetos
 - [Sobre](https://heitordlq.github.io/pt/about/): experiência completa, formação, certificações e idiomas
-- [Projetos](https://heitordlq.github.io/pt/projects/): Projetos pessoais, com o código aberto no GitHub. São trabalhos próprios, em TypeScript.
+- [Projetos](https://heitordlq.github.io/pt/projects/): Projetos pessoais, com o código aberto no GitHub.
 - [Home (English)](https://heitordlq.github.io/en/): versão em inglês do site
 
 ## Projetos pessoais
