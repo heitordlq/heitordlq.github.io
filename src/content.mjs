@@ -170,16 +170,16 @@ export const experience = [
   }
 ];
 
-// Formação e idioma vêm do CV. A instituição do bacharelado não aparece no texto do PDF, então fica sem instituição.
+// Formação e idioma vêm do CV.
 export const education = [
   {
     title: { pt: 'Pós-graduação em Desenvolvimento Estratégico e Liderança de Resultados', en: 'Postgraduate degree in Strategic Development and Results Leadership' },
-    org: 'Uninove (Bússola Executiva)',
+    org: 'Bússola Executiva',
     period: { pt: 'jun. 2025 – jun. 2026', en: 'Jun 2025 – Jun 2026' }
   },
   {
     title: { pt: 'Bacharelado em Ciência da Computação', en: 'Bachelor’s degree in Computer Science' },
-    org: '',
+    org: 'Uninove',
     period: { pt: '2009 – 2013', en: '2009 – 2013' }
   }
 ];
