@@ -11,7 +11,7 @@ Portfólio de Heitor Queiroz: site estático e bilíngue (PT-BR e EN), sem frame
 - As páginas do portfólio usam fontes do sistema e não fazem requisição a serviço externo. O único JavaScript delas é o do botão de tema.
 - `/curriculo/` é à parte: currículo interativo em 3D, com cerca de 12,8 kB comprimido (gzip). Ele carrega three.js (cdnjs) e fontes do Google.
 - Skip link, foco visível, rótulos ARIA na navegação e `hreflang` entre os idiomas.
-- Entre 3,6 e 6,8 kB por página do portfólio, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
+- Entre 3,6 e 6,6 kB por página do portfólio, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
 
 ## Estrutura
 
