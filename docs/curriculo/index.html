@@ -69,7 +69,7 @@ button{font:inherit;color:inherit}
 .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:calc(90px + env(safe-area-inset-top,0px)) var(--pad) clamp(28px,6vh,64px)}
 .hero::after{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(to right,rgba(3,5,10,.86) 0%,rgba(3,5,10,.6) 40%,transparent 72%)}
 .ghost{position:absolute;left:0;right:0;top:46%;transform:translateY(-50%);margin:0;text-align:center;font:800 clamp(2.4rem,11.4vw,12.5rem)/1 var(--disp);
-  letter-spacing:-.03em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(234,242,250,.3);white-space:nowrap;pointer-events:none;z-index:-1}
+  letter-spacing:-.03em;text-transform:uppercase;color:rgba(3,5,10,.6);-webkit-text-stroke:1.5px rgba(234,242,250,.55);white-space:nowrap;pointer-events:none;z-index:-1}
 .hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px}
 .thin{margin:0;font:200 clamp(1.5rem,3.6vw,3rem)/1.12 var(--disp);letter-spacing:.01em;text-transform:uppercase;max-width:20ch}
 .hud{margin:0;font:400 .72rem/1.7 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
@@ -80,6 +80,7 @@ button{font:inherit;color:inherit}
 
 /* sobre */
 .sobre{height:260vh}
+.sobre::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(to right,rgba(3,5,10,.8) 0%,rgba(3,5,10,.5) 45%,transparent 72%)}
 .stick{position:sticky;top:0;height:100vh;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:24px;padding:0 var(--pad)}
 .words{margin:0;font:200 clamp(1.7rem,4.6vw,4rem)/1.18 var(--disp);max-width:24ch;letter-spacing:-.005em}
 .words span{opacity:.16;transition:opacity .25s linear}
@@ -110,7 +111,7 @@ button{font:inherit;color:inherit}
 
 /* seções de lista */
 .info{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;gap:2rem;padding:calc(100px + env(safe-area-inset-top,0px)) var(--pad) 80px}
-.info::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.6),transparent 75%);z-index:-1;pointer-events:none}
+.info::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(3,5,10,.82) 0%,rgba(3,5,10,.5) 45%,transparent 72%);z-index:-1;pointer-events:none}
 .info h2{margin:0;font:800 clamp(2rem,6vw,5rem)/.96 var(--disp);letter-spacing:-.03em;text-transform:uppercase}
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,72px);max-width:960px}
 .cols h3{margin:0 0 .8rem;font:500 .74rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--acc);transition:color 1s}
@@ -153,7 +154,15 @@ button{font:inherit;color:inherit}
   .cols{grid-template-columns:1fr}
   .menu-ov ol{columns:1}
   .ghost{top:38%}
+  .stick{justify-content:flex-end;padding-bottom:calc(10vh + env(safe-area-inset-bottom,0px))}
+  .sobre::after{background:none}
+  .contact{justify-content:flex-end}
   .hero::after{background:linear-gradient(to top,rgba(3,5,10,.92) 0%,rgba(3,5,10,.7) 42%,transparent 78%)}
+}
+@media (min-width:821px){
+  .words{max-width:min(24ch,46vw)}
+  .sub{max-width:min(58ch,46vw)}
+  .contact h2{max-width:min(12ch,48vw);font-size:clamp(2.2rem,7vw,7rem)}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -194,7 +203,7 @@ button{font:inherit;color:inherit}
     </div>
   </section>
 
-  <section class="scene sobre" id="sobre" data-scene="sphere" data-era="hero" data-side="c" data-label="Sobre">
+  <section class="scene sobre" id="sobre" data-scene="sphere" data-era="hero" data-side="r" data-label="Sobre">
     <div class="stick">
       <p class="hud">[ Sobre ]</p>
       <p class="words" id="words">Lidero times de engenharia, conecto estratégia de negócio e execução técnica e construo plataformas bancárias e de apostas que sustentam alto volume e disponibilidade crítica.</p>
@@ -261,7 +270,7 @@ button{font:inherit;color:inherit}
     </div>
   </section>
 
-  <section class="scene info contact" id="contato" data-scene="sphere" data-era="hero" data-side="c" data-label="Contato">
+  <section class="scene info contact" id="contato" data-scene="sphere" data-era="hero" data-side="r" data-label="Contato">
     <p class="hud">[ Próximo passo: gestão de engenharia ]</p>
     <h2 data-scr>Vamos conversar</h2>
     <div class="ct-links">
