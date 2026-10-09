@@ -38,6 +38,10 @@ function layout({ lang, path, title, description, body, ogType = 'website' }) {
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="${t.htmlLang.replace('-', '_')}">
+<meta property="og:image" content="${site.base}/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="stylesheet" href="/assets/site.css">
@@ -408,6 +412,7 @@ put('/.nojekyll', '');
 put('/assets/site.css', readFileSync('src/assets/site.css', 'utf8') + diagramCss());
 put('/assets/site.js', readFileSync('src/assets/site.js', 'utf8'));
 for (const f of ['QGYvz_MVcBeNP4NJtEtq.woff2', 'tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2']) put(`/assets/fonts/${f}`, readFileSync(`src/assets/fonts/${f}`));
+put('/assets/og.png', readFileSync('src/assets/og.png'));
 put('/curriculo/Heitor-Queiroz-Curriculo.pdf', readFileSync('src/assets/Heitor-Queiroz-Curriculo.pdf'));
 put('/curriculo/index.html', readFileSync('src/curriculo.html', 'utf8'));
 
