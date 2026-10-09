@@ -8,9 +8,10 @@ Portfólio de Heitor Queiroz: site estático e bilíngue (PT-BR e EN), sem frame
 
 - Início, experiência, lista de projetos, uma página por projeto (com arquitetura) e página Sobre (experiência completa, formação, certificações e idiomas), em português e em inglês.
 - Troca de idioma e de tema (claro e escuro). O tema segue o sistema e a escolha fica salva no navegador.
-- Fontes do sistema e nenhuma requisição a serviço externo. O único JavaScript é o do botão de tema.
+- As páginas do portfólio usam fontes do sistema e não fazem requisição a serviço externo. O único JavaScript delas é o do botão de tema.
+- `/curriculo/` é à parte: currículo interativo em 3D, com cerca de 12,8 kB comprimido (gzip). Ele carrega three.js (cdnjs) e fontes do Google.
 - Skip link, foco visível, rótulos ARIA na navegação e `hreflang` entre os idiomas.
-- Entre 3,6 e 6,8 kB por página, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
+- Entre 3,6 e 6,8 kB por página do portfólio, com CSS e JS, comprimidos (gzip). O build imprime a medida de cada página.
 
 ## Estrutura
 
@@ -18,6 +19,7 @@ Portfólio de Heitor Queiroz: site estático e bilíngue (PT-BR e EN), sem frame
 src/
   content.mjs      todo o texto do site, em PT-BR e EN
   assets/          site.css e site.js
+  curriculo.html   currículo interativo em 3D, copiado como está para docs/curriculo/
 build.mjs          gera o site em docs/ (só biblioteca padrão do Node)
 docs/              saída gerada, é o que o GitHub Pages publica
 ```

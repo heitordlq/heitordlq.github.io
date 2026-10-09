@@ -378,6 +378,7 @@ put('/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${site.base}/sitemap.xml\n
 put('/.nojekyll', '');
 put('/assets/site.css', readFileSync('src/assets/site.css', 'utf8') + diagramCss());
 put('/assets/site.js', readFileSync('src/assets/site.js', 'utf8'));
+put('/curriculo/index.html', readFileSync('src/curriculo.html', 'utf8'));
 
 const pages = [...files.keys()].filter((k) => /\/(index\.html)$/.test(k) && k !== '/index.html').map((k) => k.replace('index.html', ''));
 put(
@@ -424,7 +425,7 @@ for (const [path, content] of files) {
 const asset = (p) => gzipSync(files.get(p)).length;
 const shared = asset('/assets/site.css') + asset('/assets/site.js');
 const weights = [...files.keys()]
-  .filter((k) => k.endsWith('/index.html') && k !== '/index.html')
+  .filter((k) => k.endsWith('/index.html') && k !== '/index.html' && k !== '/curriculo/index.html')
   .map((k) => ({ k, gz: gzipSync(files.get(k)).length + shared }));
 const max = Math.max(...weights.map((w) => w.gz));
 console.log(`${files.size} arquivos em ${OUT}/. Maior página com CSS e JS (gzip): ${(max / 1024).toFixed(1)} kB.`);
