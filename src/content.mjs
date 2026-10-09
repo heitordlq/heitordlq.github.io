@@ -283,8 +283,9 @@ export const ui = {
     siteDesc: 'Portfólio de Heitor Queiroz, Tech Lead: experiência, projetos pessoais, stack e contato.',
     whoTitle: 'Quem sou',
     who: [
-      'Sou Tech Lead e trabalho com tecnologia há mais de 10 anos. Hoje lidero times que constroem microsserviços de alto volume em Kubernetes na AWS, em plataformas de apostas (iGaming) e em sistemas bancários e financeiros.',
-      'Acho que boa arquitetura sai de time motivado e bem acompanhado. Na gestão de pessoas, faço 1:1 com regularidade, dou feedback no dia a dia e mantenho um PDI para cada pessoa.'
+      'Sou Tech Lead e trabalho com tecnologia há mais de 10 anos. Acho que boa arquitetura sai de time motivado, bem acompanhado e que sabe por que está construindo aquilo.',
+      'Liderei por quase dois anos um time de 14 pessoas na plataforma de apostas e cassino de uma empresa de iGaming, com muito volume de transações e pouca margem para ficar fora do ar. Antes disso, migrei serviços legados para microsserviços em uma instituição financeira e trabalhei no core de Internet Banking e PIX, em contextos regulados. Agora lidero o time de uma plataforma bancária, com foco em Pix e canais digitais.',
+      'Na gestão de pessoas, faço 1:1, PDI e acompanho a performance de cada um. Contratei 8 pessoas e conduzi duas promoções. Nas decisões de arquitetura, facilito a discussão e busco o que escala e acelera a entrega. Com Produto e a liderança executiva, sou o ponto de contato técnico: traduzo necessidade de negócio em roadmap e aviso os riscos cedo.'
     ],
     stackTitle: 'Stack',
     workTitle: 'Projetos pessoais',
@@ -320,8 +321,9 @@ export const ui = {
     siteDesc: 'Portfolio of Heitor Queiroz, Tech Lead: experience, personal projects, stack and contact.',
     whoTitle: 'About me',
     who: [
-      'I am a Tech Lead and have worked in technology for more than 10 years. Today I lead teams that build high-volume microservices on Kubernetes on AWS, in betting (iGaming) platforms and in banking and financial systems.',
-      'I think good architecture comes from a motivated, well-supported team. For people management, I hold regular 1:1s, give feedback day to day and keep a development plan for each person.'
+      'I am a Tech Lead and have worked in technology for more than 10 years. I think good architecture comes from a team that is motivated, well supported and knows why it is building what it builds.',
+      'For almost two years I led a team of 14 on the betting and casino platform of an iGaming company, with high transaction volume and little room for downtime. Before that, I migrated legacy services to microservices at a financial institution and worked on the Internet Banking and PIX core, in regulated settings. Now I lead the team of a banking platform, working on Pix and digital channels.',
+      'On people management, I run 1:1s and development plans and follow each person’s performance. I hired 8 people and led two promotions. On architecture decisions, I facilitate the discussion and look for what scales and speeds up delivery. With Product and executive leadership, I am the technical point of contact: I turn business needs into a roadmap and flag risks early.'
     ],
     stackTitle: 'Stack',
     workTitle: 'Personal projects',
