@@ -69,8 +69,9 @@ h3 { font-size: 1.2rem; font-weight: 650; }
 
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
-.card h3 a { color: var(--ink); text-decoration: none; }
-.card h3 a:hover { color: var(--accent); }
+.card h2, .card h3 { font-size: 1.2rem; font-weight: 650; }
+.card h2 a, .card h3 a { color: var(--ink); text-decoration: none; }
+.card h2 a:hover, .card h3 a:hover { color: var(--accent); }
 .card .go { margin-top: auto; font-weight: 500; }
 .tech { font: 400 0.78rem/1.7 var(--mono); color: var(--muted); }
 

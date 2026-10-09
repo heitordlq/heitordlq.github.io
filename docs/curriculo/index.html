@@ -4,10 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Heitor Queiroz — Tech Lead</title>
+<meta name="description" content="Currículo interativo de Heitor Queiroz, Tech Lead de engenharia: experiência, formação e competências.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js","locked")</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;800&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 <style>
 :root{
   color-scheme:dark;
@@ -285,7 +289,7 @@ button{font:inherit;color:inherit}
 <div class="yr" id="yr" aria-hidden="true"><span>[ ano ]</span><div class="yrn" id="yrn"></div></div>
 
 <script>
-(function(){
+addEventListener("DOMContentLoaded",function(){(function(){
   var root=document.documentElement; root.classList.add("js");
   function $(s,r){return (r||document).querySelector(s);}
   function $$(s,r){return [].slice.call((r||document).querySelectorAll(s));}
@@ -600,7 +604,7 @@ button{font:inherit;color:inherit}
   if(reduce){showAll();}
   setScene(scenes[0]);
   update();
-})();
+})();});
 </script>
 </body>
 </html>

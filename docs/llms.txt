@@ -1,0 +1,22 @@
+# Heitor Queiroz
+
+> Portfólio de Heitor Queiroz, Tech Lead: experiência, projetos pessoais, stack e contato. Site estático e bilíngue (PT-BR e EN), sem framework.
+
+Tech Lead. Gestão de times de engenharia, microsserviços e integração, no setor financeiro e de iGaming.
+
+## Páginas
+
+- [Início](https://heitordlq.github.io/pt/): apresentação, experiência resumida, stack e projetos
+- [Sobre](https://heitordlq.github.io/pt/about/): experiência completa, formação, certificações e idiomas
+- [Projetos](https://heitordlq.github.io/pt/projects/): Projetos pessoais, com o código aberto no GitHub. São trabalhos próprios, em TypeScript.
+- [Home (English)](https://heitordlq.github.io/en/): versão em inglês do site
+
+## Projetos pessoais
+
+- [Barbearia SaaS](https://heitordlq.github.io/pt/projects/barbearia-saas/): Plataforma multi-tenant para barbearias, com agendamento, fidelidade e pagamentos.
+- [Assessor App](https://heitordlq.github.io/pt/projects/assessor-app/): Aplicativo mobile para gerenciamento de mensagens e relatórios.
+
+## Contato
+
+- [LinkedIn](https://www.linkedin.com/in/heitorqueiroz/)
+- [GitHub](https://github.com/heitordlq)

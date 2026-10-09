@@ -162,7 +162,7 @@ function contactBlock(lang) {
 </section>`;
 }
 
-function projectCards(lang) {
+function projectCards(lang, nivel = 3) {
   const t = ui[lang];
   return `<div class="cards">
 ${projects
@@ -170,7 +170,7 @@ ${projects
     const c = p[lang];
     const href = `/${lang}/projects/${p.slug}/`;
     return `  <article class="card">
-    <h3><a href="${href}">${esc(c.title)}</a></h3>
+    <h${nivel}><a href="${href}">${esc(c.title)}</a></h${nivel}>
     <p>${esc(c.summary)}</p>
     <p class="tech">${p.tech.map(esc).join(' / ')}</p>
     <a class="go" href="${href}">${esc(t.viewProject)} &rarr;</a>
@@ -262,7 +262,7 @@ ${contactBlock(lang)}`
       body: `<section>
   <h1>${esc(t.projectsTitle)}</h1>
   <p class="lead">${esc(t.projectsIntro)}</p>
-  ${projectCards(lang)}
+  ${projectCards(lang, 2)}
 </section>`
     })
   );
@@ -375,6 +375,35 @@ put(
 
 put('/favicon.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2547D0"/><text x="16" y="22" font-family="sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#fff">HQ</text></svg>\n`);
 put('/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${site.base}/sitemap.xml\n`);
+
+// llms.txt (llmstxt.org): guia em Markdown para agentes. Só o portfólio; o currículo 3D fica de fora de propósito.
+put(
+  '/llms.txt',
+  [
+    `# ${site.name}`,
+    '',
+    `> ${ui.pt.siteDesc} Site estático e bilíngue (PT-BR e EN), sem framework.`,
+    '',
+    ui.pt.role,
+    '',
+    '## Páginas',
+    '',
+    `- [Início](${site.base}/pt/): apresentação, experiência resumida, stack e projetos`,
+    `- [Sobre](${site.base}/pt/about/): experiência completa, formação, certificações e idiomas`,
+    `- [Projetos](${site.base}/pt/projects/): ${ui.pt.projectsIntro}`,
+    `- [Home (English)](${site.base}/en/): versão em inglês do site`,
+    '',
+    '## Projetos pessoais',
+    '',
+    ...projects.map((p) => `- [${p.pt.title}](${site.base}/pt/projects/${p.slug}/): ${p.pt.summary}`),
+    '',
+    '## Contato',
+    '',
+    `- [LinkedIn](${site.linkedin})`,
+    `- [GitHub](${site.github})`,
+    ''
+  ].join('\n')
+);
 put('/.nojekyll', '');
 put('/assets/site.css', readFileSync('src/assets/site.css', 'utf8') + diagramCss());
 put('/assets/site.js', readFileSync('src/assets/site.js', 'utf8'));
