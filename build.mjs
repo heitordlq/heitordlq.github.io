@@ -407,6 +407,7 @@ put(
 put('/.nojekyll', '');
 put('/assets/site.css', readFileSync('src/assets/site.css', 'utf8') + diagramCss());
 put('/assets/site.js', readFileSync('src/assets/site.js', 'utf8'));
+for (const f of ['QGYvz_MVcBeNP4NJtEtq.woff2', 'tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2']) put(`/assets/fonts/${f}`, readFileSync(`src/assets/fonts/${f}`));
 put('/curriculo/index.html', readFileSync('src/curriculo.html', 'utf8'));
 
 const pages = [...files.keys()].filter((k) => /\/(index\.html)$/.test(k) && k !== '/index.html').map((k) => k.replace('index.html', ''));
